@@ -1,0 +1,7 @@
+{
+  "name": "6_Chart",
+  "version": "1.0.0",
+  "dependencies": {
+    "chart.js": "^3.8.0"
+  }
+}

@@ -15,7 +15,7 @@ const data = {
       label: 'Successful indicators',
       data: users.map(user => user.rating),
       borderColor: 'red',
-      backgroundColor: 'hsl(125%, 100%, 50%, 0.5)',
+      backgroundColor: 'hsl(50%, 50%, 50%, 0.5)',
       borderWidth: 2,
       borderRadius: Number.MAX_VALUE,
       borderSkipped: false,
@@ -31,3 +31,22 @@ const data = {
     }
   ]
 };
+
+const config = {
+  type: 'bar',
+  data: data,
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'top',
+      },
+      title: {
+        display: true,
+        text: 'JS random user rating'
+      }
+    }
+  },
+};
+
+const myChart = new Chart(document.getElementById('myChart'), config);

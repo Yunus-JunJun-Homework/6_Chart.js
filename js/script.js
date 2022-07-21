@@ -14,8 +14,8 @@ const data = {
     {
       label: 'Successful indicators',
       data: users.map(user => user.rating),
-      borderColor: 'red',
-      backgroundColor: 'hsl(50%, 50%, 50%, 0.5)',
+      borderColor: 'green',
+      backgroundColor: 'hsl(0%, 50%, 50%, 0.5)',
       borderWidth: 2,
       borderRadius: Number.MAX_VALUE,
       borderSkipped: false,
